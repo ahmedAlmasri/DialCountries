@@ -7,18 +7,27 @@
 //
 
 import UIKit
-
+import DialCountries
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+		DispatchQueue.main.async {
+			
+			let cv = DialCountriesController(locale: Locale(identifier: "en_US"))
+			cv.delegate = self
+			cv.show(vc: self)
+		}
+		
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+}
 
+extension ViewController: DialCountriesControllerDelegate {
+	func didSelected(with country: Country) {
+		print(country)
+	}
+	
+	
 }
 

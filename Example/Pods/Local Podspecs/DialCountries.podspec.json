@@ -1,0 +1,25 @@
+{
+  "name": "DialCountries",
+  "version": "0.1.0",
+  "summary": "A short description of DialCountries.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ahmed.almasri@ymail.com/DialCountries",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ahmed.almasri@ymail.com": "ahmed.almasri@ymail.com"
+  },
+  "source": {
+    "git": "https://github.com/ahmed.almasri@ymail.com/DialCountries.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "DialCountries/Classes/**/*",
+  "resource_bundles": {
+    "DialCountries": "DialCountries/Classes/**/*.{json}"
+  }
+}

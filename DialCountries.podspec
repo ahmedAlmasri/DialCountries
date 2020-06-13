@@ -28,10 +28,11 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/ahmed.almasri@ymail.com/DialCountries.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'DialCountries/Classes/**/*'
-  
+  s.resource_bundle = { 'DialCountries' => 'DialCountries/Classes/**/*.{json}' }
+
   # s.resource_bundles = {
   #   'DialCountries' => ['DialCountries/Assets/*.png']
   # }

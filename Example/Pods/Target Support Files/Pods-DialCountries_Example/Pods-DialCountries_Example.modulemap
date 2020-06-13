@@ -1,0 +1,6 @@
+framework module Pods_DialCountries_Example {
+  umbrella header "Pods-DialCountries_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

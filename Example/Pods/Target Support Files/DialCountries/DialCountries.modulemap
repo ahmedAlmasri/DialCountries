@@ -1,0 +1,6 @@
+framework module DialCountries {
+  umbrella header "DialCountries-umbrella.h"
+
+  export *
+  module * { export * }
+}

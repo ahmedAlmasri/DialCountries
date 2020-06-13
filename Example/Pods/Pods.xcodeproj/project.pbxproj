@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17ECA5B534C2894331E66B6BF033EB1B /* DialCountriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473D7D0ECAC4B0EE05C063E640F8A74B /* DialCountriesController.swift */; };
+		40A86AF0249020A700642F1E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A86AEF249020A700642F1E /* Country.swift */; };
+		40A86AF2249020C800642F1E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A86AF1249020C800642F1E /* Config.swift */; };
+		6E0F9AA325DE6F0FDB3F2F803B345F99 /* Pods-DialCountries_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7C295CA0F97B0C25A3CA1D7B0122B2 /* Pods-DialCountries_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FEEF902990EDD5694290A78DE52990C /* DialCountries-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D46961B0959967B7F981A8685C2FFEA /* DialCountries-dummy.m */; };
+		6FF1A0550FBD5F7C9264954F92015125 /* DialCountries-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C334E34111E84C1A468B03BB9B7493E /* DialCountries-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72BFA7F6239287B514F4141D448D8C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7D55CDA8F2B54828977CFAA6F5D3FBB6 /* Pods-DialCountries_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CB59E8DA7010BDA338921287BDF098 /* Pods-DialCountries_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C1F655678D59C0B2B626DEE8D891942 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9105F78B99C927279F37A5F554378009 /* Pods-DialCountries_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 498FC4C77F937C69C241B00CD5718DC8 /* Pods-DialCountries_Example-dummy.m */; };
+		9C14297D0C2A604F7ECD32CE9D812680 /* Pods-DialCountries_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B72002675986AE19AC11DA6FA56F58 /* Pods-DialCountries_Tests-dummy.m */; };
+		9E7203C9CE06F5761743361C34E4C1F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9EAF456B71416B1D85DC29D1604B98F9 /* countries.json in Sources */ = {isa = PBXBuildFile; fileRef = 047195D0C46796C600A62DCC614E991D /* countries.json */; };
+		9F2F32AAC20081A4B1B4D32343F4ED6C /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283D1EF53D69C2CF3093AA373E8FE5 /* Bundle.swift */; };
+		AD707F9706260348356F44000495BC06 /* CountriesAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE52ADA749F4A39BADB209194FEB9 /* CountriesAdapter.swift */; };
+		BE106CC3C52FC08E3868F7F1F62C49C3 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 047195D0C46796C600A62DCC614E991D /* countries.json */; };
+		E6F8A102852F1DBDD934F52CD98E32EE /* CountriesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124F4F2DC212BECCE58207B0CED0792 /* CountriesFetcher.swift */; };
+		EA19BDAE7A0E3A5960F077BCEA040A1E /* DialCountries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 833DC5F4F9CD08CAC365746A33DB43A7 /* DialCountries.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		580C6F503A7A5155EDF0505789E74D27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80A9CB4F96ABEE0F4724AC4CA346D702;
+			remoteInfo = DialCountries;
+		};
+		71D5BDF185D6CBB53E6533CB7AFB9B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6063D945AB7BF4D4891AAE5E37DD78AA;
+			remoteInfo = "Pods-DialCountries_Example";
+		};
+		DA392B64F089AF110323BF43882FE11F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3845717074531A7A89BAA05907850A7;
+			remoteInfo = "DialCountries-DialCountries";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047195D0C46796C600A62DCC614E991D /* countries.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		117799BA93C01A547DF35F76E194E621 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A25D2E4435B3303CC2760EEC0A0601D /* ResourceBundle-DialCountries-DialCountries-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DialCountries-DialCountries-Info.plist"; sourceTree = "<group>"; };
+		252D8F2A5857F6A9F2701AC4FEB3A733 /* Pods-DialCountries_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DialCountries_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2890CE797924B9A328B7025817853D13 /* Pods-DialCountries_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DialCountries_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2A7F49F1BEAF45FEFD6433321E78CA63 /* DialCountries-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DialCountries-prefix.pch"; sourceTree = "<group>"; };
+		2CEEFECAEC6B180B39B67956E131FCAC /* Pods-DialCountries_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DialCountries_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		30851E25114CE764681F67D39CC48F66 /* DialCountries.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DialCountries.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		364A28E5AE722AC866D3075FF49CF7DA /* DialCountries.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DialCountries.modulemap; sourceTree = "<group>"; };
+		40A86AEF249020A700642F1E /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		40A86AF1249020C800642F1E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		45837CDC418BA3514ECFEC4D9DF25146 /* DialCountries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DialCountries.debug.xcconfig; sourceTree = "<group>"; };
+		473D7D0ECAC4B0EE05C063E640F8A74B /* DialCountriesController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DialCountriesController.swift; sourceTree = "<group>"; };
+		498FC4C77F937C69C241B00CD5718DC8 /* Pods-DialCountries_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DialCountries_Example-dummy.m"; sourceTree = "<group>"; };
+		4C1E28E78B5FD505C91568894036FEE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4C334E34111E84C1A468B03BB9B7493E /* DialCountries-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DialCountries-umbrella.h"; sourceTree = "<group>"; };
+		4D46961B0959967B7F981A8685C2FFEA /* DialCountries-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DialCountries-dummy.m"; sourceTree = "<group>"; };
+		4EF74F09999ECCDBA09BAD827D2A24B3 /* Pods-DialCountries_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DialCountries_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		628729CE33611EEE5A923DBD6AAD6CA4 /* Pods-DialCountries_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DialCountries_Tests-Info.plist"; sourceTree = "<group>"; };
+		7347EE3C2D69D1AFF462477D830A156A /* DialCountries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DialCountries.release.xcconfig; sourceTree = "<group>"; };
+		79A1BD3D9F83432077C3F947485F6439 /* Pods-DialCountries_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DialCountries_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		79B6BD97181C4ADACFEA9CC3B36CE36B /* DialCountries-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DialCountries-Info.plist"; sourceTree = "<group>"; };
+		7B5067800A8442BBD21DF4B30A4AC899 /* Pods_DialCountries_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialCountries_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		833DC5F4F9CD08CAC365746A33DB43A7 /* DialCountries.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialCountries.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6FE52ADA749F4A39BADB209194FEB9 /* CountriesAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CountriesAdapter.swift; sourceTree = "<group>"; };
+		9059DFC8B2FA77D2D026EEF7F8B101F4 /* Pods-DialCountries_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DialCountries_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		94476EC04AA728364A72E4C159C39C93 /* Pods-DialCountries_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DialCountries_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9738754571F950088D84E496DDBAD7AB /* Pods-DialCountries_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DialCountries_Example.release.xcconfig"; sourceTree = "<group>"; };
+		988EF6F4675C0C19807FCEFD93336A04 /* DialCountries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DialCountries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6831220566D3269465A6A4BDA7470B9 /* Pods-DialCountries_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DialCountries_Example-Info.plist"; sourceTree = "<group>"; };
+		AE283D1EF53D69C2CF3093AA373E8FE5 /* Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		B1F06ABAD01CA6424D833523F5DE9BE2 /* Pods-DialCountries_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DialCountries_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CB7C295CA0F97B0C25A3CA1D7B0122B2 /* Pods-DialCountries_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DialCountries_Example-umbrella.h"; sourceTree = "<group>"; };
+		D2634E9A8A8D9DD114A1E880EABE3D90 /* Pods-DialCountries_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DialCountries_Example.modulemap"; sourceTree = "<group>"; };
+		E124F4F2DC212BECCE58207B0CED0792 /* CountriesFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CountriesFetcher.swift; sourceTree = "<group>"; };
+		E7B72002675986AE19AC11DA6FA56F58 /* Pods-DialCountries_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DialCountries_Tests-dummy.m"; sourceTree = "<group>"; };
+		E8CB59E8DA7010BDA338921287BDF098 /* Pods-DialCountries_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DialCountries_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EB2AC3EA01AFC65D8B4F39E88E4F9F8C /* Pods-DialCountries_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DialCountries_Tests.modulemap"; sourceTree = "<group>"; };
+		F64F863E8595C79B040D435E386FAD32 /* Pods_DialCountries_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialCountries_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AE28166E6DC5AB925F02271838C7E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF979BD19C67F6D192F5E9716AB4E596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E7203C9CE06F5761743361C34E4C1F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2CD34D1D4B1036D38310DDA92C1D943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72BFA7F6239287B514F4141D448D8C9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEDCF9834F9312E9E4DA45CDE66B418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1F655678D59C0B2B626DEE8D891942 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1224B620A3A8FC8E0C293FB6E2FA6344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				833DC5F4F9CD08CAC365746A33DB43A7 /* DialCountries.bundle */,
+				988EF6F4675C0C19807FCEFD93336A04 /* DialCountries.framework */,
+				F64F863E8595C79B040D435E386FAD32 /* Pods_DialCountries_Example.framework */,
+				7B5067800A8442BBD21DF4B30A4AC899 /* Pods_DialCountries_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19F7D9E6F238B2EE6AB00EDAF0D7D624 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				30851E25114CE764681F67D39CC48F66 /* DialCountries.podspec */,
+				4C1E28E78B5FD505C91568894036FEE9 /* LICENSE */,
+				117799BA93C01A547DF35F76E194E621 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1E4AD2403446BD32F650FE30396E730F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				047195D0C46796C600A62DCC614E991D /* countries.json */,
+			);
+			name = Resources;
+			path = DialCountries/Classes/Resources;
+			sourceTree = "<group>";
+		};
+		29729E477E4E82125FACBB0E6EFF561B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D6FE52ADA749F4A39BADB209194FEB9 /* CountriesAdapter.swift */,
+				473D7D0ECAC4B0EE05C063E640F8A74B /* DialCountriesController.swift */,
+			);
+			name = Views;
+			path = DialCountries/Classes/Views;
+			sourceTree = "<group>";
+		};
+		40A86AEE2490207C00642F1E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				40A86AEF249020A700642F1E /* Country.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		4339520DEC9D23233670F5B9CB06A8E4 /* Pods-DialCountries_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EB2AC3EA01AFC65D8B4F39E88E4F9F8C /* Pods-DialCountries_Tests.modulemap */,
+				2CEEFECAEC6B180B39B67956E131FCAC /* Pods-DialCountries_Tests-acknowledgements.markdown */,
+				94476EC04AA728364A72E4C159C39C93 /* Pods-DialCountries_Tests-acknowledgements.plist */,
+				E7B72002675986AE19AC11DA6FA56F58 /* Pods-DialCountries_Tests-dummy.m */,
+				628729CE33611EEE5A923DBD6AAD6CA4 /* Pods-DialCountries_Tests-Info.plist */,
+				E8CB59E8DA7010BDA338921287BDF098 /* Pods-DialCountries_Tests-umbrella.h */,
+				79A1BD3D9F83432077C3F947485F6439 /* Pods-DialCountries_Tests.debug.xcconfig */,
+				2890CE797924B9A328B7025817853D13 /* Pods-DialCountries_Tests.release.xcconfig */,
+			);
+			name = "Pods-DialCountries_Tests";
+			path = "Target Support Files/Pods-DialCountries_Tests";
+			sourceTree = "<group>";
+		};
+		4C9A2831F813B5048B10E41F349FAF36 /* DialCountries */ = {
+			isa = PBXGroup;
+			children = (
+				40A86AEE2490207C00642F1E /* Module */,
+				51B79890CE55CCF7A23A702DE697FC70 /* Core */,
+				19F7D9E6F238B2EE6AB00EDAF0D7D624 /* Pod */,
+				1E4AD2403446BD32F650FE30396E730F /* Resources */,
+				672BE9A7813485A953FB261B50DD1EBA /* Support Files */,
+				29729E477E4E82125FACBB0E6EFF561B /* Views */,
+			);
+			name = DialCountries;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		51B79890CE55CCF7A23A702DE697FC70 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AE283D1EF53D69C2CF3093AA373E8FE5 /* Bundle.swift */,
+				E124F4F2DC212BECCE58207B0CED0792 /* CountriesFetcher.swift */,
+				40A86AF1249020C800642F1E /* Config.swift */,
+			);
+			name = Core;
+			path = DialCountries/Classes/Core;
+			sourceTree = "<group>";
+		};
+		559CBA09AA376899957B817F9057A310 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C9A2831F813B5048B10E41F349FAF36 /* DialCountries */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		672BE9A7813485A953FB261B50DD1EBA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				364A28E5AE722AC866D3075FF49CF7DA /* DialCountries.modulemap */,
+				4D46961B0959967B7F981A8685C2FFEA /* DialCountries-dummy.m */,
+				79B6BD97181C4ADACFEA9CC3B36CE36B /* DialCountries-Info.plist */,
+				2A7F49F1BEAF45FEFD6433321E78CA63 /* DialCountries-prefix.pch */,
+				4C334E34111E84C1A468B03BB9B7493E /* DialCountries-umbrella.h */,
+				45837CDC418BA3514ECFEC4D9DF25146 /* DialCountries.debug.xcconfig */,
+				7347EE3C2D69D1AFF462477D830A156A /* DialCountries.release.xcconfig */,
+				1A25D2E4435B3303CC2760EEC0A0601D /* ResourceBundle-DialCountries-DialCountries-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DialCountries";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				559CBA09AA376899957B817F9057A310 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1224B620A3A8FC8E0C293FB6E2FA6344 /* Products */,
+				E995217F937D7D351386A19E8AC6F446 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E995217F937D7D351386A19E8AC6F446 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4E60BEADCE156D81251A504573672D7 /* Pods-DialCountries_Example */,
+				4339520DEC9D23233670F5B9CB06A8E4 /* Pods-DialCountries_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F4E60BEADCE156D81251A504573672D7 /* Pods-DialCountries_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D2634E9A8A8D9DD114A1E880EABE3D90 /* Pods-DialCountries_Example.modulemap */,
+				252D8F2A5857F6A9F2701AC4FEB3A733 /* Pods-DialCountries_Example-acknowledgements.markdown */,
+				9059DFC8B2FA77D2D026EEF7F8B101F4 /* Pods-DialCountries_Example-acknowledgements.plist */,
+				498FC4C77F937C69C241B00CD5718DC8 /* Pods-DialCountries_Example-dummy.m */,
+				B1F06ABAD01CA6424D833523F5DE9BE2 /* Pods-DialCountries_Example-frameworks.sh */,
+				A6831220566D3269465A6A4BDA7470B9 /* Pods-DialCountries_Example-Info.plist */,
+				CB7C295CA0F97B0C25A3CA1D7B0122B2 /* Pods-DialCountries_Example-umbrella.h */,
+				4EF74F09999ECCDBA09BAD827D2A24B3 /* Pods-DialCountries_Example.debug.xcconfig */,
+				9738754571F950088D84E496DDBAD7AB /* Pods-DialCountries_Example.release.xcconfig */,
+			);
+			name = "Pods-DialCountries_Example";
+			path = "Target Support Files/Pods-DialCountries_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1624872155355787C608E7E99469AA7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0F9AA325DE6F0FDB3F2F803B345F99 /* Pods-DialCountries_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2895D1F531322CCA0D48DBF395EAAE65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D55CDA8F2B54828977CFAA6F5D3FBB6 /* Pods-DialCountries_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC31E013413973D08D632FF025BF7E39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF1A0550FBD5F7C9264954F92015125 /* DialCountries-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5DC086820F660610E62B618856CFD8A8 /* Pods-DialCountries_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EDBBFEB755F289A85975ECFA5CC60B2 /* Build configuration list for PBXNativeTarget "Pods-DialCountries_Tests" */;
+			buildPhases = (
+				2895D1F531322CCA0D48DBF395EAAE65 /* Headers */,
+				7090AB6599E45BCB716253ABFE5017F6 /* Sources */,
+				BF979BD19C67F6D192F5E9716AB4E596 /* Frameworks */,
+				AB3FCD8D2A5E5ADD642B46A09A06FCF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C735AAF9FFF6E9CEE306D353A159B25 /* PBXTargetDependency */,
+			);
+			name = "Pods-DialCountries_Tests";
+			productName = "Pods-DialCountries_Tests";
+			productReference = 7B5067800A8442BBD21DF4B30A4AC899 /* Pods_DialCountries_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6063D945AB7BF4D4891AAE5E37DD78AA /* Pods-DialCountries_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD210778387E94BF3738575C30227C6D /* Build configuration list for PBXNativeTarget "Pods-DialCountries_Example" */;
+			buildPhases = (
+				1624872155355787C608E7E99469AA7A /* Headers */,
+				FFC1EDDEF912FDE3C164B65DB0C05363 /* Sources */,
+				FEEDCF9834F9312E9E4DA45CDE66B418 /* Frameworks */,
+				46D4DFA2D7187ECB41DA518AB3D04A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C9E42BC4F748F8B1E384B71562BCF13 /* PBXTargetDependency */,
+			);
+			name = "Pods-DialCountries_Example";
+			productName = "Pods-DialCountries_Example";
+			productReference = F64F863E8595C79B040D435E386FAD32 /* Pods_DialCountries_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80A9CB4F96ABEE0F4724AC4CA346D702 /* DialCountries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F0655915C9EDA61C32A118878624AFC /* Build configuration list for PBXNativeTarget "DialCountries" */;
+			buildPhases = (
+				FC31E013413973D08D632FF025BF7E39 /* Headers */,
+				F22456841757762BCBA29FA11B973978 /* Sources */,
+				C2CD34D1D4B1036D38310DDA92C1D943 /* Frameworks */,
+				626E5CD04557C6D375AB1408458998CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91E1D5CBA573CD44908CAD223A957A0E /* PBXTargetDependency */,
+			);
+			name = DialCountries;
+			productName = DialCountries;
+			productReference = 988EF6F4675C0C19807FCEFD93336A04 /* DialCountries.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3845717074531A7A89BAA05907850A7 /* DialCountries-DialCountries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06FB90EA3AA0E2FB14F2630843134C3 /* Build configuration list for PBXNativeTarget "DialCountries-DialCountries" */;
+			buildPhases = (
+				B7CC307FF49E11BCCD8A0D53E26C271F /* Sources */,
+				9AE28166E6DC5AB925F02271838C7E0F /* Frameworks */,
+				1CDCE8600B42C8FE624219EC8B6F9F59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DialCountries-DialCountries";
+			productName = "DialCountries-DialCountries";
+			productReference = 833DC5F4F9CD08CAC365746A33DB43A7 /* DialCountries.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1224B620A3A8FC8E0C293FB6E2FA6344 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80A9CB4F96ABEE0F4724AC4CA346D702 /* DialCountries */,
+				E3845717074531A7A89BAA05907850A7 /* DialCountries-DialCountries */,
+				6063D945AB7BF4D4891AAE5E37DD78AA /* Pods-DialCountries_Example */,
+				5DC086820F660610E62B618856CFD8A8 /* Pods-DialCountries_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CDCE8600B42C8FE624219EC8B6F9F59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE106CC3C52FC08E3868F7F1F62C49C3 /* countries.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4DFA2D7187ECB41DA518AB3D04A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		626E5CD04557C6D375AB1408458998CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA19BDAE7A0E3A5960F077BCEA040A1E /* DialCountries.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3FCD8D2A5E5ADD642B46A09A06FCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7090AB6599E45BCB716253ABFE5017F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C14297D0C2A604F7ECD32CE9D812680 /* Pods-DialCountries_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7CC307FF49E11BCCD8A0D53E26C271F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22456841757762BCBA29FA11B973978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A86AF0249020A700642F1E /* Country.swift in Sources */,
+				9F2F32AAC20081A4B1B4D32343F4ED6C /* Bundle.swift in Sources */,
+				9EAF456B71416B1D85DC29D1604B98F9 /* countries.json in Sources */,
+				AD707F9706260348356F44000495BC06 /* CountriesAdapter.swift in Sources */,
+				E6F8A102852F1DBDD934F52CD98E32EE /* CountriesFetcher.swift in Sources */,
+				40A86AF2249020C800642F1E /* Config.swift in Sources */,
+				6FEEF902990EDD5694290A78DE52990C /* DialCountries-dummy.m in Sources */,
+				17ECA5B534C2894331E66B6BF033EB1B /* DialCountriesController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC1EDDEF912FDE3C164B65DB0C05363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9105F78B99C927279F37A5F554378009 /* Pods-DialCountries_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C735AAF9FFF6E9CEE306D353A159B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DialCountries_Example";
+			target = 6063D945AB7BF4D4891AAE5E37DD78AA /* Pods-DialCountries_Example */;
+			targetProxy = 71D5BDF185D6CBB53E6533CB7AFB9B38 /* PBXContainerItemProxy */;
+		};
+		6C9E42BC4F748F8B1E384B71562BCF13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DialCountries;
+			target = 80A9CB4F96ABEE0F4724AC4CA346D702 /* DialCountries */;
+			targetProxy = 580C6F503A7A5155EDF0505789E74D27 /* PBXContainerItemProxy */;
+		};
+		91E1D5CBA573CD44908CAD223A957A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DialCountries-DialCountries";
+			target = E3845717074531A7A89BAA05907850A7 /* DialCountries-DialCountries */;
+			targetProxy = DA392B64F089AF110323BF43882FE11F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2B6E738A27F10AC4ADA057075BB10BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79A1BD3D9F83432077C3F947485F6439 /* Pods-DialCountries_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DialCountries_Tests/Pods-DialCountries_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DialCountries_Tests/Pods-DialCountries_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36DD5823A19C2EECA8EBBC432705B5B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9738754571F950088D84E496DDBAD7AB /* Pods-DialCountries_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DialCountries_Example/Pods-DialCountries_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DialCountries_Example/Pods-DialCountries_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A2B4834DAE96CC9A3825C4BC23FC317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7347EE3C2D69D1AFF462477D830A156A /* DialCountries.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DialCountries/DialCountries-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DialCountries/DialCountries-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DialCountries/DialCountries.modulemap";
+				PRODUCT_MODULE_NAME = DialCountries;
+				PRODUCT_NAME = DialCountries;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4CCD0EC1582D4FFE4B37363F8E132708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7347EE3C2D69D1AFF462477D830A156A /* DialCountries.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DialCountries";
+				IBSC_MODULE = DialCountries;
+				INFOPLIST_FILE = "Target Support Files/DialCountries/ResourceBundle-DialCountries-DialCountries-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = DialCountries;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		56D2A2A7DCBFDB5A54C9BEE4B616EF4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2890CE797924B9A328B7025817853D13 /* Pods-DialCountries_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DialCountries_Tests/Pods-DialCountries_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DialCountries_Tests/Pods-DialCountries_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C09786C3E967748C78BA3EB54CAFBB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45837CDC418BA3514ECFEC4D9DF25146 /* DialCountries.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DialCountries/DialCountries-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DialCountries/DialCountries-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DialCountries/DialCountries.modulemap";
+				PRODUCT_MODULE_NAME = DialCountries;
+				PRODUCT_NAME = DialCountries;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB85CE85EB0A2A785CA4EAB92F2F2718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF74F09999ECCDBA09BAD827D2A24B3 /* Pods-DialCountries_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DialCountries_Example/Pods-DialCountries_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DialCountries_Example/Pods-DialCountries_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0569E28DB06D430CDF472C864BC54BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45837CDC418BA3514ECFEC4D9DF25146 /* DialCountries.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DialCountries";
+				IBSC_MODULE = DialCountries;
+				INFOPLIST_FILE = "Target Support Files/DialCountries/ResourceBundle-DialCountries-DialCountries-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = DialCountries;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
+				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EDBBFEB755F289A85975ECFA5CC60B2 /* Build configuration list for PBXNativeTarget "Pods-DialCountries_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6E738A27F10AC4ADA057075BB10BF5 /* Debug */,
+				56D2A2A7DCBFDB5A54C9BEE4B616EF4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F0655915C9EDA61C32A118878624AFC /* Build configuration list for PBXNativeTarget "DialCountries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09786C3E967748C78BA3EB54CAFBB5A /* Debug */,
+				3A2B4834DAE96CC9A3825C4BC23FC317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD210778387E94BF3738575C30227C6D /* Build configuration list for PBXNativeTarget "Pods-DialCountries_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB85CE85EB0A2A785CA4EAB92F2F2718 /* Debug */,
+				36DD5823A19C2EECA8EBBC432705B5B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06FB90EA3AA0E2FB14F2630843134C3 /* Build configuration list for PBXNativeTarget "DialCountries-DialCountries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0569E28DB06D430CDF472C864BC54BA /* Debug */,
+				4CCD0EC1582D4FFE4B37363F8E132708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
