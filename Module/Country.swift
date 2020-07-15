@@ -19,7 +19,7 @@ public struct Country: Decodable {
 	}
 	let code: String
 	var name: String {
-		 Config.localIdentifier?.localizedString(forRegionCode: code) ?? ""
+		Config.localIdentifier?.localizedString(forRegionCode: code) ?? ""
 	}
 	
 	var title: String {
@@ -27,4 +27,10 @@ public struct Country: Decodable {
 		String(format: "%@ %@", self.flag, self.name)
 	}
 	let dialCode: String?
+	
+	public static func getCurrentCountry() -> Country? {
+		let locale: NSLocale = NSLocale.current as NSLocale
+		let currentCode: String? = locale.countryCode
+		return CountriesFetcher().fetch().first(where: { $0.code ==  currentCode})
+	}
 }

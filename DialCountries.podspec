@@ -9,35 +9,15 @@
 Pod::Spec.new do |s|
   s.name             = 'DialCountries'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DialCountries.'
+  s.summary          = 'DialCountries is a swift countrycontroller. Provides country name, ISO 3166 country codes, country flag, and calling codes'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/ahmed.almasri@ymail.com/DialCountries'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/ahmedAlmasri/DialCountries'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ahmed.almasri@ymail.com' => 'ahmed.almasri@ymail.com' }
-  s.source           = { :git => 'https://github.com/ahmed.almasri@ymail.com/DialCountries.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'ahmad Almasri' => 'ahmed.almasri@ymail.com' }
+  s.source           = { :git => 'https://github.com/ahmedAlmasri/DialCountries.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'DialCountries/Classes/**/*'
   s.resource_bundle = { 'DialCountries' => 'DialCountries/Classes/**/*.{json}' }
-
-  # s.resource_bundles = {
-  #   'DialCountries' => ['DialCountries/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

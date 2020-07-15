@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Config {
-	public init() {}
+ struct Config {
+	 init() {}
 	static var localIdentifier: Locale!
 }
