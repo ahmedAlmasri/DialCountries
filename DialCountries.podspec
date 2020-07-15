@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DialCountries'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'DialCountries is a swift countrycontroller. Provides country name, ISO 3166 country codes, country flag, and calling codes'
 
   s.homepage         = 'https://github.com/ahmedAlmasri/DialCountries'
