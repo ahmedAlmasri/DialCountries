@@ -1,25 +1,26 @@
 {
   "name": "DialCountries",
   "version": "0.1.0",
-  "summary": "A short description of DialCountries.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ahmed.almasri@ymail.com/DialCountries",
+  "summary": "DialCountries is a swift countrycontroller. Provides country name, ISO 3166 country codes, country flag, and calling codes",
+  "homepage": "https://github.com/ahmedAlmasri/DialCountries",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "ahmed.almasri@ymail.com": "ahmed.almasri@ymail.com"
+    "ahmad Almasri": "ahmed.almasri@ymail.com"
   },
   "source": {
-    "git": "https://github.com/ahmed.almasri@ymail.com/DialCountries.git",
+    "git": "https://github.com/ahmedAlmasri/DialCountries.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "12.0"
   },
+  "swift_versions": "5.0",
   "source_files": "DialCountries/Classes/**/*",
   "resource_bundles": {
     "DialCountries": "DialCountries/Classes/**/*.{json}"
-  }
+  },
+  "swift_version": "5.0"
 }
