@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Country: Decodable {
-	var flag: String {
+	public var flag: String {
 		
 		return code
 			.unicodeScalars
@@ -17,16 +17,16 @@ public struct Country: Decodable {
 			.map(String.init)
 			.joined()
 	}
-	let code: String
-	var name: String {
+	public let code: String
+	public var name: String {
 		Config.localIdentifier?.localizedString(forRegionCode: code) ?? ""
 	}
 	
-	var title: String {
+	public var title: String {
 		
 		String(format: "%@ %@", self.flag, self.name)
 	}
-	let dialCode: String?
+	public let dialCode: String?
 	
 	public static func getCurrentCountry() -> Country? {
 		let locale: NSLocale = NSLocale.current as NSLocale
