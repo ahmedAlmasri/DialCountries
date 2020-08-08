@@ -14,6 +14,7 @@
 		1876E6299275883849502F48B41C8BF9 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6E8E4EB7B3E544B2BA161B604D261 /* Bundle.swift */; };
 		35DDEDD04A3ADA2E7C9DC6B191441B26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		38660C07026D4A0D23315E22F0FA9C96 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DC30663A48CD06EEBA5BDFEF8487357 /* countries.json */; };
+		40C0B37A24DECD2E00FADD2C /* String+Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C0B37924DECD2E00FADD2C /* String+Numbers.swift */; };
 		53492F187E3FF042F1B8C29DB1BFFF49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		6238F759B865E46FBA74E6481185C709 /* CountriesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9E757E6B108B069E68D9727482A2E /* CountriesFetcher.swift */; };
 		7ED3527A91CF164515BFF47BB64F6946 /* Pods-DialCountries_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B72002675986AE19AC11DA6FA56F58 /* Pods-DialCountries_Tests-dummy.m */; };
@@ -54,13 +55,14 @@
 /* Begin PBXFileReference section */
 		13DA7D0B7AD345882F9AACA68C5DFA1F /* DialCountries.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DialCountries.modulemap; sourceTree = "<group>"; };
 		18406BA6A10AE5605C7CC37A8779CEC5 /* DialCountries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DialCountries.release.xcconfig; sourceTree = "<group>"; };
-		1DA3539B89E5806A62CADCF39B34788F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1DA3539B89E5806A62CADCF39B34788F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		252D8F2A5857F6A9F2701AC4FEB3A733 /* Pods-DialCountries_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DialCountries_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2890CE797924B9A328B7025817853D13 /* Pods-DialCountries_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DialCountries_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2CEEFECAEC6B180B39B67956E131FCAC /* Pods-DialCountries_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DialCountries_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2DC30663A48CD06EEBA5BDFEF8487357 /* countries.json */ = {isa = PBXFileReference; includeInIndex = 1; path = countries.json; sourceTree = "<group>"; };
+		2DC30663A48CD06EEBA5BDFEF8487357 /* countries.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3AE27C3E98360234DAEF926A8A21F0E1 /* DialCountries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DialCountries.debug.xcconfig; sourceTree = "<group>"; };
+		40C0B37924DECD2E00FADD2C /* String+Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Numbers.swift"; sourceTree = "<group>"; };
 		498FC4C77F937C69C241B00CD5718DC8 /* Pods-DialCountries_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DialCountries_Example-dummy.m"; sourceTree = "<group>"; };
 		4AFD6A700E2E58B404F1A40C947657E3 /* ResourceBundle-DialCountries-DialCountries-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DialCountries-DialCountries-Info.plist"; sourceTree = "<group>"; };
 		4EF74F09999ECCDBA09BAD827D2A24B3 /* Pods-DialCountries_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DialCountries_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,18 +70,18 @@
 		628729CE33611EEE5A923DBD6AAD6CA4 /* Pods-DialCountries_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DialCountries_Tests-Info.plist"; sourceTree = "<group>"; };
 		66289E9C5F987A12D28A3A76E3B11C2B /* DialCountries-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DialCountries-umbrella.h"; sourceTree = "<group>"; };
 		79A1BD3D9F83432077C3F947485F6439 /* Pods-DialCountries_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DialCountries_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7B5067800A8442BBD21DF4B30A4AC899 /* Pods_DialCountries_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DialCountries_Tests.framework; path = "Pods-DialCountries_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		833DC5F4F9CD08CAC365746A33DB43A7 /* DialCountries.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DialCountries.bundle; path = "DialCountries-DialCountries.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5067800A8442BBD21DF4B30A4AC899 /* Pods_DialCountries_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialCountries_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		833DC5F4F9CD08CAC365746A33DB43A7 /* DialCountries.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialCountries.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		9059DFC8B2FA77D2D026EEF7F8B101F4 /* Pods-DialCountries_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DialCountries_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		94476EC04AA728364A72E4C159C39C93 /* Pods-DialCountries_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DialCountries_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		95E8DAE8D996394DEF5564E1638A2715 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		9738754571F950088D84E496DDBAD7AB /* Pods-DialCountries_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DialCountries_Example.release.xcconfig"; sourceTree = "<group>"; };
-		988EF6F4675C0C19807FCEFD93336A04 /* DialCountries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DialCountries.framework; path = DialCountries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		988EF6F4675C0C19807FCEFD93336A04 /* DialCountries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DialCountries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A6831220566D3269465A6A4BDA7470B9 /* Pods-DialCountries_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DialCountries_Example-Info.plist"; sourceTree = "<group>"; };
 		A89E996FFCA788FB6317B40C1F182DDE /* DialCountriesController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DialCountriesController.swift; sourceTree = "<group>"; };
 		B1F06ABAD01CA6424D833523F5DE9BE2 /* Pods-DialCountries_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DialCountries_Example-frameworks.sh"; sourceTree = "<group>"; };
-		BEA1DE5DFBDAE8E9C8C25C41F3092002 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BEA1DE5DFBDAE8E9C8C25C41F3092002 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C9329335A471227B44BCA0C040E693A5 /* DialCountries-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DialCountries-prefix.pch"; sourceTree = "<group>"; };
 		CB7C295CA0F97B0C25A3CA1D7B0122B2 /* Pods-DialCountries_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DialCountries_Example-umbrella.h"; sourceTree = "<group>"; };
 		CFF6E8E4EB7B3E544B2BA161B604D261 /* Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
@@ -91,8 +93,8 @@
 		EB2AC3EA01AFC65D8B4F39E88E4F9F8C /* Pods-DialCountries_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DialCountries_Tests.modulemap"; sourceTree = "<group>"; };
 		EED457FB3D5F4780A0B80FB2715D8AFE /* CountriesAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CountriesAdapter.swift; sourceTree = "<group>"; };
 		F618D1587B7AF8AFA4D8FF450D843D9E /* DialCountries-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DialCountries-dummy.m"; sourceTree = "<group>"; };
-		F64F863E8595C79B040D435E386FAD32 /* Pods_DialCountries_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DialCountries_Example.framework; path = "Pods-DialCountries_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6CA8CC8552E2301A584C976CFE3314B /* DialCountries.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DialCountries.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F64F863E8595C79B040D435E386FAD32 /* Pods_DialCountries_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialCountries_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6CA8CC8552E2301A584C976CFE3314B /* DialCountries.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DialCountries.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				CFF6E8E4EB7B3E544B2BA161B604D261 /* Bundle.swift */,
 				95E8DAE8D996394DEF5564E1638A2715 /* Config.swift */,
 				5BF9E757E6B108B069E68D9727482A2E /* CountriesFetcher.swift */,
+				40C0B37924DECD2E00FADD2C /* String+Numbers.swift */,
 			);
 			name = Core;
 			path = DialCountries/Classes/Core;
@@ -499,6 +502,7 @@
 				6238F759B865E46FBA74E6481185C709 /* CountriesFetcher.swift in Sources */,
 				F370B4EF90FF58E24C3A2C9A4C9B106D /* Country.swift in Sources */,
 				0B89FC821864A8DD093B6C9AE4CC57CC /* DialCountries-dummy.m in Sources */,
+				40C0B37A24DECD2E00FADD2C /* String+Numbers.swift in Sources */,
 				9EF8CBE4DEC426C10557A05F3E96DA6D /* DialCountriesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -853,8 +857,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

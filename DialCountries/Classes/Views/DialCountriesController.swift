@@ -65,7 +65,7 @@ public class DialCountriesController: UITableViewController, UISearchResultsUpda
 	public func updateSearchResults(for searchController: UISearchController) {
 		if let searchText = searchController.searchBar.text, !searchText.isEmpty {
 			countryFilter = countryList.filter { country in
-				return country.name.lowercased().contains(searchText.lowercased()) || (country.dialCode?.contains(searchText) == true)
+				return country.name.lowercased().contains(searchText.lowercased()) || (country.dialCode?.contains(searchText.toEnglishNumber()) == true) || country.code.lowercased().contains(searchText.lowercased())
 			}
 			
 			

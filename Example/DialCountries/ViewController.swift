@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 		DispatchQueue.main.async {
 			
-			let cv = DialCountriesController(locale: Locale(identifier: "en_US"))
+			let cv = DialCountriesController(locale: Locale(identifier: "ar"))
 			cv.delegate = self
 			cv.show(vc: self)
 		}
